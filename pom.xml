@@ -5,40 +5,32 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>org.springframework.samples</groupId>
   <artifactId>spring-petclinic</artifactId>
-  <version>2.2.0</version>
+  <version>2.4.0.BUILD-SNAPSHOT</version>
 
   <parent>
     <groupId>org.springframework.boot</groupId>
     <artifactId>spring-boot-starter-parent</artifactId>
-    <version>2.3.4.RELEASE</version>
+    <version>2.4.0</version>
   </parent>
   <name>petclinic</name>
 
   <properties>
 
     <!-- Generic properties -->
-    <java.version>1.9</java.version>
+    <java.version>1.8</java.version>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
     <!-- Web dependencies -->
-    <webjars-bootstrap.version>4.5.3</webjars-bootstrap.version>
-    <webjars-jquery-ui.version>1.12.1</webjars-jquery-ui.version>
-    <webjars-jquery.version>3.5.1</webjars-jquery.version>
-    <wro4j.version>1.9.0</wro4j.version>
+    <webjars-bootstrap.version>3.3.6</webjars-bootstrap.version>
+    <webjars-jquery-ui.version>1.11.4</webjars-jquery-ui.version>
+    <webjars-jquery.version>2.2.4</webjars-jquery.version>
+    <wro4j.version>1.8.0</wro4j.version>
 
-    <jacoco.version>0.8.6</jacoco.version>
-    <nohttp-checkstyle.version>0.0.5.RELEASE</nohttp-checkstyle.version>
+    <jacoco.version>0.8.5</jacoco.version>
+    <nohttp-checkstyle.version>0.0.4.RELEASE</nohttp-checkstyle.version>
     <spring-format.version>0.0.25</spring-format.version>
   </properties>
-
-  <distributionManagement>
-    <repository>
-      <id>github</id>
-      <name>GitHub OWNER Apache Maven Packages</name>
-      <url>https://maven.pkg.github.com/srivatsamarichi/spring-petclinic</url>
-    </repository>
-  </distributionManagement>
 
   <dependencies>
     <!-- Spring and Spring Boot dependencies -->
@@ -60,14 +52,11 @@
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
-      <artifactId>spring-boot-starter-thymeleaf</artifactId>
+      <artifactId>spring-boot-starter-validation</artifactId>
     </dependency>
     <dependency>
-       <groupId>com.microsoft.azure</groupId>
-       <artifactId>applicationinsights-web-auto</artifactId>
-       <!-- or applicationinsights-web for manual web filter registration -->
-       <!-- or applicationinsights-core for bare API -->
-       <version>2.6.2</version>
+      <groupId>org.springframework.boot</groupId>
+      <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
     <dependency>
       <groupId>org.springframework.boot</groupId>
@@ -125,18 +114,6 @@
     </dependency>
     <!-- end of webjars -->
 
-    <!-- Testing -->
-    <dependency>
-      <groupId>org.junit.jupiter</groupId>
-      <artifactId>junit-jupiter-engine</artifactId>
-      <scope>test</scope>
-    </dependency>
-    <dependency>
-      <groupId>org.mockito</groupId>
-      <artifactId>mockito-junit-jupiter</artifactId>
-      <scope>test</scope>
-    </dependency>
-
     <dependency>
       <groupId>org.springframework.boot</groupId>
       <artifactId>spring-boot-devtools</artifactId>
@@ -150,7 +127,6 @@
         <groupId>io.spring.javaformat</groupId>
         <artifactId>spring-javaformat-maven-plugin</artifactId>
         <version>${spring-format.version}</version>
-        <!-- run ./mvnw spring-javaformat:apply to apply -->
         <executions>
           <execution>
             <phase>validate</phase>
@@ -168,7 +144,7 @@
           <dependency>
             <groupId>com.puppycrawl.tools</groupId>
             <artifactId>checkstyle</artifactId>
-            <version>8.37</version>
+            <version>8.32</version>
           </dependency>
           <dependency>
             <groupId>io.spring.nohttp</groupId>
@@ -292,7 +268,6 @@
     </plugins>
   </build>
 
-  <!-- Apache 2 license -->
   <licenses>
     <license>
       <name>Apache License, Version 2.0</name>

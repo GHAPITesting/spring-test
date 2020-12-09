@@ -5,21 +5,11 @@
   <body>
 
     <h2 th:text="#{welcome}">Welcome</h2>
-    <div class="row col-md-12">
-      
-      <div class="col-md-4">
-            <img class="img-responsive" src="/resources/images/pets.png">
-          </div>
-              <div class="col-md-8">
-                  <p>The Spring PetClinic was created in 2003 by Kren Krebs and Juergen Hoeller who are developing the first version of the Spring Framework (released in march 2004). This sample application was a kind of tutorial, a demonstration of what it was possible to conceive. It was distributed with the Spring Framework until the 2.5 version (2007).</p>
-                  <br/>
-                  <p>At this time, the Spring ecosystem was growing: Spring Batch, Spring Web Services, Spring Security… The PetClinic development was in stand-by.</p>
-                  <br/>
-                  <p>The Spring community likes demo application. It was missing. So in 2013, Keith Donald, Michael Isvy and Costin Leau has decided to migrate the source code of PetClinic to GitHub and Spring Framework 3. PetClinic relives.</p>
-                  <br/>
-                  <p>In 2016, PetClinic switched to Spring Boot. Dave Syer and Stéphane Nicoll took the leadership. In parallel, Antoine Rey centralized all forks of Spring PetClinic into a GitHub Organization. Nowadays, 9 forks are maintained by the Spring PetClinic community.</p>
-          <div>
-         </div></div></div>
+    <div class="row">
+        <div class="col-md-12">
+          <img class="img-responsive" src="../static/resources/images/pets.png" th:src="@{/resources/images/pets.png}"/>
+        </div>
+    </div>
 
   </body>
 
