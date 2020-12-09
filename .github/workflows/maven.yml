@@ -3,7 +3,8 @@
 
 name: Spring-Petclinic
 on:
-  push:
+  push: 
+   branches: main 
 
 env:
   AZURE_WEBAPP_NAME: springtestecan9
