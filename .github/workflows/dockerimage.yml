@@ -2,7 +2,7 @@ name: Spring-Petclinic.Docker
 
 on:
   push:
-    branches: [ master ]
+    branches: [ main ]
     
   workflow_dispatch:
   
