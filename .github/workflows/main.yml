@@ -21,7 +21,7 @@ jobs:
       - uses: GuillaumeFalourd/create-other-repo-branch-action@v1
         with:
           repository_owner: GHAPITesting
-          repository_name: python-demo
+          repository_name: pythondemo
           new_branch_name: python-action
           new_branch_ref: main
           access_token: ${{ secrets.ACCESS_TOKEN}}
