@@ -10,6 +10,7 @@ Petclinic is a [Spring Boot](https://spring.io/guides/gs/spring-boot) applicatio
 Test Changes added
 New changes added
 More changes
+New Changes from remote 
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
