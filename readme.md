@@ -11,6 +11,7 @@ Test Changes added
 New changes added
 More changes
 New changes
+Changes from remote 
 ```
 git clone https://github.com/spring-projects/spring-petclinic.git
 cd spring-petclinic
