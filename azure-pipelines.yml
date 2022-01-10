@@ -12,7 +12,7 @@ pool:
 variables:
   imageName: 'spring-petclinic:$(build.buildId)'
   azureSubscriptionEndpoint: srivatsa-arm
-  azureContainerRegistry: vaishnav.azurecr.io
+  azureContainerRegistry: rajesh.azurecr.io
   azureContainerRegistry: srivatsa.azurecr.io
 
 
