@@ -14,6 +14,7 @@ variables:
   azureSubscriptionEndpoint: srivatsa-arm
   azureContainerRegistry: rajesh.azurecr.io
   azureContainerRegistry: srivatsa.azurecr.io
+  azureContainerRegistry: grenston.azurecr.io
 
 
 steps:
