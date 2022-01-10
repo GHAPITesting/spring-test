@@ -12,7 +12,11 @@ pool:
 variables:
   imageName: 'spring-petclinic:$(build.buildId)'
   azureSubscriptionEndpoint: srivatsa-arm
+<<<<<<< HEAD
   azureContainerRegistry: vaishnav.azurecr.io
+=======
+  azureContainerRegistry: srivatsa.azurecr.io
+>>>>>>> branch 'main' of https://github.com/GHAPITesting/spring-test.git
 
 steps:
 - task: Maven@3
