@@ -26,5 +26,5 @@ jobs:
       run: mvn -B package --file pom.xml
     
     - run: |
-       cd ${{github.workspace}}/src/test
+       cd ${{github.workspace}}/src/test/java
        ls -ltr
