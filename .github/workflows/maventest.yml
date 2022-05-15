@@ -27,3 +27,4 @@ jobs:
     
     - run: |
        cd ${{github.workspace}}/src/test
+       ls -ltr
