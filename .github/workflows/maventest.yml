@@ -26,5 +26,5 @@ jobs:
       run: mvn -B package --file pom.xml
     
     - run: |
-       cd ${{github.workspace}}/src/test/java/org/springframework/samples/petclinic/
+       cd ${{github.workspace}}
        ls -ltr
